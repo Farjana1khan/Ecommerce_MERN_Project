@@ -1,0 +1,142 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.mainContactContainer1{
+  
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwhHWYtwS_zLtW9iarY6cIquC_RKq-p5slmQ&usqp=CAU"); 
+ height: 73vh;
+  margin-top: 0;
+  width: 100vw;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: relative; 
+  background-size: 100% 100%;
+  place-items: center;
+  position: fixed;
+}
+
+
+.mainContainer {
+
+  height: 75vh;
+   margin-top: 0;
+   width: 100vw; 
+  max-width: 100%;
+   
+   display: flex;
+   place-items: center;
+ 
+   
+ }
+.contactContainer1 {
+  text-transform: uppercase;
+  margin-top: 0;
+  padding: 20px;
+  margin: 25px;
+  color: white;
+  height: 10%;
+  width: 50%;
+}
+
+
+
+.contactContainer2 {
+  margin-top: 0;
+  background-color: white;
+  padding: 4px;
+  margin: 40px;
+  height: 30%;
+  width: 50%;
+  text-align: center;
+  transform: translateY(-10vw) translateX(-5vw);
+  animation: mailBtnAnimation 2s forwards;
+}
+
+.contactContainer2 .mailBtn {
+  list-style-type: none;
+  list-style: none;
+  text-decoration: none;
+  transform: translateY(-20vw);
+  animation: mailBtnAnimation 2s forwards;
+
+}
+
+.mailBtn > button {
+  text-decoration: none;
+  font: 200 2vmax "Arial";
+  cursor: url("https://img.icons8.com/color/48/000000/edit--v2.png"), pointer;
+  padding: 3vmax;
+}
+
+@keyframes mailBtnAnimation {
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .mainContainer {
+   
+    display: flex;
+    flex-direction: column;
+ }
+
+
+   .mainContactContainer1{
+    width: 100vw;
+    place-items: center;
+    position: fixed;
+  }
+
+  
+  .contactContainer1 {
+    text-transform: uppercase;
+    color: white;
+  }
+  
+ 
+  
+  .contactContainer2 {
+  background-color: white;
+  padding: 5px;
+  height: 35px;
+  margin:  10px;
+  }
+  
+
+  .contactContainer2 .mailBtn {
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    transform: translateY(-70vw);
+    animation: mailBtnAnimation 2s forwards;
+  }
+
+
+
+
+  
+  .mailBtn > button {
+    text-decoration: none;
+    font: 500 1vmax "Arial";
+    cursor: url("https://img.icons8.com/color/48/000000/edit--v2.png"), pointer;
+    padding: 2vmax;
+  }
+  
+  @keyframes mailBtnAnimation {
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  
+}

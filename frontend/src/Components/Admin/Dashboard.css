@@ -1,0 +1,120 @@
+.dashboard {
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  position: absolute;
+}
+
+.dashboard{
+ 
+  box-sizing: border-box;
+  background-color: rgb(235, 235, 235);
+
+  top: 0;
+  left: 0;
+  height: 100vh;
+
+}
+
+.dashboardContainer {
+  margin-bottom: 5vmax;
+  border-left: 1px solid rgba(0, 0, 0, 0.13);
+  background-color: rgb(255, 255, 255);
+  padding: 0rem 0;
+}
+
+.dashboardContainer > h1 {
+  color: rgba(0, 0, 0, 0.733);
+  font: 300 2rem "Arial";
+  text-align: center;
+  width: 50%;
+  padding: 1.5rem;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.dashboardSummary {
+  margin: 5rem 0;
+}
+
+.dashboardSummary > div {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+.dashboardSummary > div > p {
+  background-color: tomato;
+  color: white;
+  font: 300 1.3rem "Arial";
+  text-align: center;
+  padding: 1.5rem;
+  width: 100%;
+  margin: 0 2rem;
+}
+.dashboardSummaryBox2 > a {
+  color: white;
+  font: 300 2rem "Arial";
+  text-align: center;
+  background-color: rgb(101, 40, 171);
+  text-decoration: none;
+  padding: 1.5rem;
+  width: 10vmax;
+  height: 10vmax;
+  margin: 2rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dashboardSummaryBox2 > a:first-child {
+  background-color: rgb(27, 140, 144);
+  color: rgb(255, 255, 255);
+}
+
+.dashboardSummaryBox2 > a:last-child {
+ 
+  background-color:    rgb(43, 112, 43);
+  color: rgb(255, 255, 255);
+}
+
+.lineChart {
+  width: 80%;
+  margin: auto;
+}
+
+.doughnutChart {
+  width: 30vmax;
+  margin: auto;
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+   
+  }
+
+  .doughnutChart{
+    margin-top: 0;
+    margin-bottom: 20vmax;
+    
+  }
+
+  .dashboardContainer {
+    border-left: none;
+    
+  }
+
+  .dashboardSummary > div > p {
+    margin: 0;
+  }
+
+  .dashboardSummaryBox2 > a {
+    padding: 0.5rem;
+    margin: 1rem;
+    font: 300 0.9rem "Arial";
+  }
+}
